@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <canvas id="canvas-image-blending"></canvas>
+
+    <main class="content-container">
+        
+        <header class="hero">
+            <h1 class="logo">Oasis</h1>
+            <div class="hero-text">
+                <h2>Explore <span id="typed-text"></span></h2>
+                <p>Experience destination curation tailored for the minimalist traveler.</p>
+            </div>
+        </header>
+
+        <section class="slider-section" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Featured Escapes</h3>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beach">
+                                <h4>Kyoto, Japan</h4>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Mountain">
+                                <h4>Reykjavík, Iceland</h4>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=600&q=80" alt="Snow">
+                                <h4>Zermatt, Switzerland</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                <h3>01 / Pure Design</h3>
+                <p>Stripped of noise, focusing solely on the essence of your journey.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-left" data-aos-delay="300">
+                <h3>02 / Curated Spaces</h3>
+                <p>Handpicked boutique stays that blend architecture with nature.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* --- Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+/* --- Granim Background Canvas --- */
+#canvas-image-blending {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* --- Layout Wrapper --- */
+.content-container {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+/* --- Slider Section (Glide.js Customization) --- */
+.slider-section {
+    margin: 4rem 0;
+}
+
+.slider-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h4 {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.glide__arrow {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: none !important;
+    color: white !important;
+    border-radius: 50% !important;
+}
+
+/* --- Features Grid --- */
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.feature-item p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* --- Responsive Media Queries (Desktop) --- */
+@media (min-width: 768px) {
+    .content-container {
+        padding: 3rem;
+    }
+
+    .hero-text h2 {
+        font-size: 4rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    
+    .card img {
+        height: 350px;
+    }
+}
